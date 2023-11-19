@@ -51,6 +51,7 @@ img {
     display: flex;
     align-items: center;
     column-gap: 76px;
+    gap: 40px;
 }
 .page-header-container {
     display: flex;
@@ -75,6 +76,7 @@ color: #434455;
         /* 116.667% */
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        margin-right: 76px;
 }
 .logo-span {
     color: #2E2F42;
@@ -101,6 +103,7 @@ color: #434455;
 }
 .main-adress {
     font-style: normal;
+    gap: 40px;
 }
 .menu-adress-link {
         /* Body */
@@ -115,6 +118,7 @@ color: #434455;
 }
 .for-business {
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 .title {
         text-align: center;
@@ -124,7 +128,7 @@ color: #434455;
         /* 107.143% */
         letter-spacing: 0.02em;
         color: #FFF;
-        width: 496px;
+        max-width: 496px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 48px;
@@ -143,6 +147,9 @@ color: #434455;
             margin-left: auto;
             margin-right: auto;
             padding: 16px 32px;
+            min-width: 169px;
+            height: 56px;
+            border: none;
 }
 .button:hover, .button:focus {
     background-color: #404BBF;
@@ -155,6 +162,7 @@ color: #434455;
         line-height: 1.2;
         /* 120% */
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 .benefits {
     padding-top: 120px;
@@ -162,7 +170,10 @@ color: #434455;
 }
 .menu-benefits-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
+}
+.menu-benefits-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .benefits-text {
         /* Body */
@@ -186,10 +197,12 @@ color: #434455;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         margin-bottom: 72px;
+        gap: 24px;
 }
 .our-team-item {
     background-color: #FFF;
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 .our-team-item-title {
     color: #2E2F42;
@@ -201,7 +214,11 @@ color: #434455;
         /* 120% */
         letter-spacing: 0.02em;
         padding-top: 32px;
-        padding-bottom: 8px;
+        margin-bottom: 8px;
+        text-align: center;
+}
+.our-team-item-tex {
+    padding: 32px 0;
 }
 .our-team-list {
     display: flex;
@@ -216,6 +233,7 @@ color: #434455;
         /* 150% */
         letter-spacing: 0.02em;
         padding-bottom: 32px;
+        text-align: center;
 }
 .our-portfolio {
     padding-top: 120px;
@@ -225,6 +243,7 @@ color: #434455;
     display: flex;
     column-gap: 24px;
     flex-wrap: wrap;
+    row-gap: 48px;
 }
 .our-portfolio-title {
     color: #2E2F42;
@@ -249,7 +268,7 @@ color: #434455;
         /* 120% */
         letter-spacing: 0.02em;
         padding-top: 32px;
-        padding-bottom: 8px;
+        margin-bottom: 8px;
 }
 .our-portfolio-text {
         /* Body */
@@ -261,10 +280,12 @@ color: #434455;
 }
 .our-portfolio-item-border {
     border-bottom: 1px solid #e7e9fc;
+    padding: 32px 16px;
 }
 .footer {
     background-color: #2E2F42;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 .logo-footer {
     color: #4D5AE5;
@@ -276,7 +297,8 @@ color: #434455;
         /* 116.667% */
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        margin-bottom: 44px;
+        margin-bottom: 16px;
+        display: inline-block;
 }
 .logo-span-footer {
     color: #F4F4FD;
@@ -290,5 +312,4 @@ color: #434455;
         /* 150% */
         letter-spacing: 0.02em;
         width: 264px;
-        padding-bottom: 100px;
 }
